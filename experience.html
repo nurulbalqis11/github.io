@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Nurul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(to bottom, #290101, #2c2c2c);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #b85c5c;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        /* Page Heading */
+        .page-heading {
+            text-align: center;
+            margin: 120px 0 30px;
+        }
+
+        .page-heading h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #b85c5c;
+            text-transform: uppercase;
+        }
+
+        .page-heading p {
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #b85c5c;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+            color: #fff;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #b85c5c;
+            border-radius: 50%;
+            top: 28px;
+            right: -8px;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -8px;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #b85c5c;
+        }
+
+        .timeline-item p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ddd;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .timeline-item span {
+            font-size: 12px;
+            color: #888;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Image Container */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            gap: 10px;
+        }
+
+        .image-container img {
+            width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover;
+            height: 150px;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo"> NURUL
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="family.html">Family</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <!-- Page Heading -->
+    <div class="page-heading">
+        <h1>Experience</h1>
+        <p>My Journey</p>
+    </div>
+
+    <!-- Timeline Section -->
+    <div class="timeline">
+        <div class="timeline-item">
+            <span>2024 - Present</span>
+            <h2>Intern - MBSA</h2>
+            <p>I have been actively involved in assisting with administrative tasks, ensuring the smooth and efficient operation of the department. Also, supporting documentation and record-keeping processes.</p>
+            <div class="image-container">
+                <img src="image/picture1.jpeg" alt="MBSA Work">
+                <img src="image/picture2.jpeg" alt="MBSA Tasks">
+            </div>
+        </div>
+        <div class="timeline-item">
+            <span>2023</span>
+            <h2>Administrative Assistant</h2>
+            <p>Managing schedules, preparing reports, and organizing files.</p>
+            <div class="image-container">
+                <img src="image/picture3.jpeg" alt="Admin Work">
+            </div>
+        </div>
+        <div class="timeline-item">
+            <span>2022</span>
+            <h2>Social Media Assistant</h2>
+            <p>Creating content, analyzing engagement metrics, and scheduling posts.</p>
+        </div>
+        <div class="timeline-item">
+            <span>2022</span>
+            <h2>Quality Control at HijabistaHub</h2>
+            <p>Pre-production checks, and post-production checks.</p>
+            <div class="image-container">
+                <img src="image/picture4.jpeg" alt="Quality Control Checks">
+            </div>
+        </div>
+        <div class="timeline-item">
+            <span>2021</span>
+            <h2>Event Volunteer</h2>
+            <p>Organized and supported community events, gaining teamwork and leadership experience.</p>
+            <div class="image-container">
+                <img src="image/picture5.jpeg" alt="Community Event">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024. Designed by Nurul.
+    </div>
+</body>
+</html>

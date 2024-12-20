@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Nurul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Playfair Display', serif;
+            background: linear-gradient(to bottom, #290101, #2c2c2c);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+        }
+
+        .navbar a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b85c5c;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 100px 50px 50px;
+        }
+
+        .hero-text {
+            max-width: 30%;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-text h1 {
+            font-size: 72px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .hero-text span {
+            font-size: 20px;
+            font-weight: 700;
+            color: #b85c5c;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .scroll-btn {
+            display: inline-block;
+            padding: 10px 30px;
+            background: #b85c5c;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .scroll-btn:hover {
+            background: #8f3e3e;
+        }
+
+        /* Hero Image */
+        .hero-image {
+            position: relative;
+            max-width: 35%;
+            animation: fadeIn 1.5s ease-out;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-border {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100%;
+            height: 100%;
+            border: 5px solid #b85c5c;
+            border-radius: 15px;
+            z-index: -1;
+        }
+
+        /* Quote Section */
+        .quote {
+            max-width: 20%;
+            font-size: 14px;
+            font-style: italic;
+            color: #ccc;
+            text-align: right;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .quote span {
+            color: #b85c5c;
+            font-weight: 700;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero-image {
+                margin-top: 20px;
+            }
+
+            .navbar {
+                padding: 20px;
+            }
+
+            .navbar a {
+                font-size: 12px;
+                margin: 0 10px;
+            }
+
+            .hero-text h1 {
+                font-size: 48px;
+            }
+
+            .quote {
+                bottom: -50px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo"> NURUL
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="family.html">Family</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello !</h1>
+            <span>Welcome To My Website</span>
+            <p>I am Nurul Balqis, A Final-Year student of Information Management.
+                Here, you'll discover more about me, my experiences, and my journey.
+                 Feel free to scroll and explore each section.</p>
+        </div>
+        <div class="hero-image">
+            <div class="hero-border"></div>
+            <img src="image/image.jpeg" alt="Nurul Photo">
+        </div>
+        <div class="quote">
+            <p>"The Future Belongs To Who Believe The Beauty Of Their Dreams" <br><span>- Eleanor Rosevelt</span></p>
+        </div>
+    </section>
+</body>
+</html>

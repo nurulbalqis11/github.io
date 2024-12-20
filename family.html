@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree - Nurul</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(to bottom, #290101, #2c2c2c);
+            color: #fff;
+            overflow-x: hidden;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #e74c3c;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        /* Page Heading */
+        .page-heading {
+            text-align: center;
+            margin: 120px 0 30px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        .page-heading h1 {
+            font-size: 54px;
+            font-weight: 900;
+            color: #b85c5c;
+            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .page-heading p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #ddd;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Family Tree Section */
+        .family-tree-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            gap: 50px;
+        }
+
+        .tree-level {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .family-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .family-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #b85c5c;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .family-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .family-member h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .family-member p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #aaa;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .connector {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .connector-line {
+            height: 2px;
+            background: #2e0500;
+            flex: 1;
+        }
+
+        .connector-line.vertical {
+            width: 2px;
+            height: 50px;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo"> NURUL
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="family.html">Family</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <!-- Page Heading -->
+    <div class="page-heading">
+        <h1>My Family </h1>
+        <p>Family is the foundation of love, support, and inspiration in our lives.</p> 
+        <p>It is where we find strength in challenges, celebrate joys, and create lasting 
+            memories together.</p>
+    </div>
+
+    <!-- Family Tree -->
+    <div class="family-tree-container">
+        <!-- Parents -->
+        <div class="tree-level">
+            <div class="family-member">
+                <img src="image/images1.jpeg" alt="Father">
+                <h2>Muhamad Yatim Abd Hamid</h2>
+                <p>Father</p>
+            </div>
+            <div class="family-member">
+                <img src="image/images1.jpeg" alt="Mother">
+                <h2>Noridah Amat</h2>
+                <p>Mother</p>
+            </div>
+        </div>
+
+        <!-- Connector -->
+        <div class="connector">
+            <div class="connector-line vertical"></div>
+        </div>
+
+        <!-- Siblings -->
+        <div class="tree-level">
+            <div class="family-member">
+                <img src="image/images2.jpeg" alt="Sibling">
+                <h2>Nurul Yazleen Izzati</h2>
+                <p>Oldest Sibling</p>
+            </div>
+            <div class="family-member">
+                <img src="image/images3.jpeg" alt="Sibling">
+                <h2>Nurul Ain</h2>
+                <p>Sister</p>
+            </div>
+            <div class="family-member">
+                <img src="image/images4.jpeg" alt="Sibling">
+                <h2>Nurul Balqis</h2>
+                <p>Me</p>
+            </div>
+            <div class="family-member">
+                <img src="image/images5.jpeg" alt="Sibling">
+                <h2>Luqman Al-Hakim</h2>
+                <p>Brother</p>
+            </div>
+            <div class="family-member">
+                <img src="image/images6.jpeg" alt="Sibling">
+                <h2>Zafran Al-Hakim</h2>
+                <p>Brother</p>
+            </div>
+            <div class="family-member">
+                <img src="image/images7.jpeg" alt="Sibling">
+                <h2>Zafri Al-Hakim</h2>
+                <p>Brother</p>
+            </div>
+            <div class="family-member">
+                <img src="image/images8.jpeg" alt="Sibling">
+                <h2>Nurul Insyirah</h2>
+                <p>Youngest Sibling</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
